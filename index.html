@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Weather</title>
+        <!-- Favicon -->
+        <link rel="shortcut icon" href="./images/weather-news.png" type="image/x-icon">
+        <!-- Font -->
+        <!-- StyleSheets -->
+        <link rel="stylesheet" href="./vendor/FontAwesome5/all.min.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+
+    <body>
+        <div class="main-container ">
+            <div class="row ">
+                <nav>
+                    <div class="inner">
+                        <div id="layer"></div>
+                        <div class="nav-bar">
+                            <a href="#">
+                                <img src="images/Disaster.png" alt>
+                            </a>
+                            <ul class="nav-content list-unstyled mt-5 text-center">
+                                <li>
+                                    <a href class="text-decoration-none active">
+                                        <i class="fa-solid fa-cloud-sun nav-icon"></i>
+                                        Weather
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://github.com/morsalashrafi" target="_blank" class=" text-decoration-none">
+                                        <i class="fa-brands fa-github nav-icon"></i>
+                                        Github
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.linkedin.com/in/morsal-ashrafi-7089382a6?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app " target="_blank"
+                                        class="text-decoration-none">
+                                        <i class="fa-brands fa-linkedin nav-icon"></i>
+                                        LinkedIN
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="mailto: morsalzulfikarashrafi@gmail.com" target="_blank" class="text-decoration-none">
+                                        <i class="fa-solid fa-circle-info nav-icon"></i>
+                                        Contact
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+                <main class="col-lg-6 ">
+                    <div class="inner">
+                        <div class="search">
+                            <input id="searchInput" type="text" placeholder="Search for Cities ...">
+                            <label for="check" id="menu">
+                                <input type="checkbox" id="check" />
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </label>
+                        </div>
+                        <div class="top">
+                            <div class="top-left">
+                                <h3 id="citySpan"></h3>
+                                <span id="rain"></span>
+                                <h2 id="temp_c"></h2>
+                                <p id="time"></p>
+                            </div>
+                            <div class="top-right">
+                                <img id="hero" src="images/crescent-moon.png" class=" vertical-shake" alt>
+                            </div>
+                        </div>
+                        <div class="middle ">
+                            <h4 class="text-uppercase">today's forecast</h4>
+                            <div id="hoursDiv" class="mid-content">
+                                <!-- Data from JS -->
+                            </div>
+                        </div>
+                        <div class="down">
+                            <div class="bottom">
+                                <h4 class="text-uppercase">air conditions</h4>
+                                <div class="bottom-content row ">
+                                    <div class="box">
+                                        <div class="first">
+                                            <i class="fa-solid fa-temperature-half"></i>
+                                            feels like
+                                        </div>
+                                        <div id="feels" class="second">
+
+                                        </div>
+                                    </div>
+                                    <div class="box ">
+                                        <div class="first">
+                                            <i class="fa-solid fa-wind"></i>
+                                            wind
+                                        </div>
+                                        <div id="wind" class="second">
+
+                                        </div>
+                                    </div>
+                                    <div class="box ">
+                                        <div class="first">
+                                            <i class="fa-solid fa-droplet"></i>
+                                            humidity
+                                        </div>
+                                        <div id="humadity" class="second">
+
+                                        </div>
+                                    </div>
+                                    <div class="box ">
+                                        <div class="first">
+                                            <i class="fa-solid fa-sun"></i>
+                                            UV index
+                                        </div>
+                                        <div id="uv" class="second">
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </main>
+                <aside>
+                    <div class="inner">
+                        <h3 class="text-uppercase">7-day Forecast</h3>
+                        <div id="aside" class="side-main-content">
+                            <!-- Data form JS -->
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </div>
+        <script src="./vendor/FontAwesome5/all.min.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+
+</html>
